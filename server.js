@@ -68,7 +68,7 @@ function switchPlayer(){
     sendUsers()
 
     const nextWord = words[Math.floor(Math.random() * words.length)];
-    currentPlayer.emit('word', nextWord);
+    currentPlayer.emit('words', nextWord);
 
     io.emit('clear');
 }
